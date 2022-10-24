@@ -1,0 +1,165 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  background-color: rgba(30, 21, 47, 0.9019607843137255) !important;
+}
+
+/* #container-music {
+  background-color: #130c1c !important;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+} */
+
+.playList {
+  padding: 20px !important;
+}
+
+#box-music:hover {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+#modal-music {
+  background-color: #130c1cbd !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0px;
+  height: 100%;
+  height: 120px;
+}
+#music-title {
+  position: fixed;
+  bottom: 0px;
+
+  left: 0;
+}
+
+/* #header-music {
+  background-color: #130c1c !important;
+  width: 300px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+} */
+
+#modal-music img {
+  padding: 20px;
+}
+
+.list-music {
+  overflow: auto !important;
+  height: 100vh;
+}
+
+.list-music::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.list-music::-webkit-scrollbar {
+  width: 2px;
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.list-music::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 2px solid #555555;
+}
+
+#container {
+  margin-right: 190px;
+}
+
+#input-range {
+  width: 500px;
+  max-width: 100%;
+  /* padding-bottom: 50px; */
+}
+
+#modal-music button {
+  font-size: 32px;
+  padding: 5px 10px;
+  background-color: #130c1c00;
+  color: aliceblue;
+  border: none;
+}
+
+#volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+/* #input-range {
+  -webkit-appearance: none;
+}
+
+#input-range::-webkit-slider-runnable-track {
+  background-color: rgba(0, 0, 0, 0.308);
+  height: 5px;
+}
+
+#input-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+/*
+#input-range:focus {
+  outline: none;
+}
+*/
+
+.card {
+  background-image: linear-gradient(117deg, #5a4be7, #c86dd7 102%);
+}
+
+.login {
+  background-image: linear-gradient(117deg, #5a4be7, #c86dd7 102%);
+}
+
+/* .active {
+  background: hsla(0, 0%, 100%, 0.1);
+} */
+
+/* animtion */
+.rounded-circle {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.active {
+  color: #c86dd7 !important;
+}
